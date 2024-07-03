@@ -1,0 +1,30 @@
+package Arrays;
+
+import java.util.Scanner;
+
+public class findingTime {
+    public static void main(String[] args)
+    {
+        time objTime = new time();
+        objTime.initialize();
+        objTime.timeCalculation();
+    }
+}
+class time{
+    double speed,distance;
+    public void initialize()
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter The Speed: ");
+        speed = sc.nextDouble();
+        System.out.println("Enter The Distance: ");
+        distance = sc.nextDouble();
+
+    }
+    public void timeCalculation()
+    {
+        System.out.println("Time Taken :" + (distance/speed) + " Hrs");
+    }
+
+
+}
